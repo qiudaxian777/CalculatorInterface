@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:inputType="number|text"
+            android:cursorVisible="true"
+            android:id="@+id/tvshow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="bottom|right"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/textSet"
+                android:text="Mc" />
+
+            <Button
+                style="@style/textSet"
+                android:text="M-" />
+
+            <Button
+                style="@style/textSet"
+                android:text="M+" />
+
+            <Button
+                style="@style/textSet"
+                android:text="Mr" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/chongxin"
+                style="@style/textSet"
+                android:text="C"
+                 />
+
+            <Button
+                android:id="@+id/chu"
+                style="@style/textSet"
+                android:text="÷" />
+
+            <Button
+                android:id="@+id/cheng"
+                style="@style/textSet"
+                android:text="*" />
+
+            <Button
+                android:id="@+id/shanchu"
+                style="@style/textSet"
+                android:text="←"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/qi"
+                style="@style/textSet"
+                android:text="7"
+              />
+
+            <Button
+                android:id="@+id/ba"
+                style="@style/textSet"
+                android:text="8"
+                 />
+
+            <Button
+                android:id="@+id/jiu"
+                style="@style/textSet"
+                android:text="9"
+                />
+
+            <Button
+                android:id="@+id/jia"
+                style="@style/textSet"
+                android:text="+"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/si"
+                style="@style/textSet"
+                android:text="4"
+                 />
+
+            <Button
+                android:id="@+id/wu"
+                style="@style/textSet"
+                android:text="5"
+                 />
+
+            <Button
+                android:id="@+id/liu"
+                style="@style/textSet"
+                android:text="6"
+                 />
+
+            <Button
+                android:id="@+id/jian"
+                style="@style/textSet"
+                android:text="-" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <!--第一个-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_weight="1">
+
+                     <Button
+                         android:id="@+id/yi"
+                         style="@style/textSet"
+                         android:text="1"
+                          />
+
+                     <Button
+                         android:id="@+id/er"
+                         style="@style/textSet"
+                         android:text="2" />
+
+                     <Button
+                         android:id="@+id/san"
+                         style="@style/textSet"
+                         android:text="3" />
+                 </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/ling"
+                            style="@style/textSet"
+                            android:layout_weight="2"
+                            android:text="0" />
+
+                        <Button
+                            android:id="@+id/dian"
+                            style="@style/textSet"
+                            android:text="."
+                            
+                             />
+                    </LinearLayout>
+
+                </LinearLayout>
+            <!--第二个-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/dengyu"
+                    style="@style/textSet"
+                    android:text="=" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
